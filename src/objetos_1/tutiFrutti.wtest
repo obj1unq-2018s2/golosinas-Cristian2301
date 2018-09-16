@@ -1,0 +1,11 @@
+import golosinas.*
+
+describe "test de tutiFrutti"{
+	
+	test "libre de Gluten" {
+		tuttifrutti.libreGluten(true)
+		assert.equals(true, tuttifrutti.libreGluten())
+		tuttifrutti.libreGluten(false)
+		assert.equals(false, tuttifrutti.libreGluten())
+	}
+}
