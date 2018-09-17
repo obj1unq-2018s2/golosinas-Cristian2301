@@ -10,6 +10,7 @@ describe "test de chocolatin"{
 	}
 	
 	test "mordisco"{
+		chocolatin.pesoInicial(100)
 		chocolatin.mordisco()
 		chocolatin.mordisco()
 		assert.equals(96, chocolatin.peso())

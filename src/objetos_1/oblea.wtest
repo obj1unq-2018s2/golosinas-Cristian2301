@@ -1,0 +1,9 @@
+import golosinas.*
+
+describe "test de oblea"{
+	test "mordisco" {
+		assert.equals(250, oblea.peso())
+	
+	}
+
+}

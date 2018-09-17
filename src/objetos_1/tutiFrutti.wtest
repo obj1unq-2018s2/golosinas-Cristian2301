@@ -8,4 +8,11 @@ describe "test de tutiFrutti"{
 		tuttifrutti.libreGluten(false)
 		assert.equals(false, tuttifrutti.libreGluten())
 	}
+	
+	test "mordisco"{
+		tuttifrutti.gusto("chocolate")
+		tuttifrutti.mordisco()
+		tuttifrutti.mordisco()
+		assert.equals("frutilla", tuttifrutti.gusto())
+	}
 }

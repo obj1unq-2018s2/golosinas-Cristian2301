@@ -186,10 +186,10 @@ object tuttifrutti {
 	}
 	
 	method mordisco(){
-		if(gusto = "frutilla"){
+		if(gusto == "frutilla"){
 			self.gusto("chocolate")
 		}
-		else if(gusto = "chocolate"){
+		else if(gusto == "chocolate"){
 			self.gusto("naranja")
 		}
 		else{
