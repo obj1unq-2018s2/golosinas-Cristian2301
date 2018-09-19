@@ -55,7 +55,7 @@ object mariano {
 	 }
 	 
 	 method esGolosinaFaltante(golosina){
-	 	return golosinasCompradas.all({caramelo => caramelo != golosina}) // SE PUEDEN IGUALAR DOS OBJETOS??
+	 	return golosinasCompradas.all({caramelo => caramelo != golosina})
 	 }
 	 
 	 method gustosFaltantes(gustosDeseados){

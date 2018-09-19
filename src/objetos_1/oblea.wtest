@@ -2,7 +2,10 @@ import golosinas.*
 
 describe "test de oblea"{
 	test "mordisco" {
-		assert.equals(250, oblea.peso())
+		oblea.mordisco()
+		oblea.mordisco()
+		oblea.mordisco()
+		assert.equals(15, oblea.peso())
 	
 	}
 

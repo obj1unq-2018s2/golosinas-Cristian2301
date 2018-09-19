@@ -5,7 +5,6 @@ describe "test de chocolatin"{
 	test "peso inicial"{
 		chocolatin.pesoInicial(40)
 		assert.equals(40, chocolatin.peso())
-		chocolatin.pesoInicial(100)
 		assert.equals(100, chocolatin.peso())
 	}
 	
@@ -15,4 +14,4 @@ describe "test de chocolatin"{
 		chocolatin.mordisco()
 		assert.equals(96, chocolatin.peso())
 	}
-}
+}             
