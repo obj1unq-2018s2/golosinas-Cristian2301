@@ -5,7 +5,7 @@ describe "test de oblea"{
 		oblea.mordisco()
 		oblea.mordisco()
 		oblea.mordisco()
-		assert.equals(15, oblea.peso())
+		assert.equals(46.875, oblea.peso())
 	
 	}
 

@@ -107,21 +107,25 @@ object oblea {
 
 object chocolatin {
 	var pesoInicial 
-	var pesoActual
+	var peso
 	
-	method pesoInicial(cuanto) { 
+	method pesoInicial(){
+		return pesoInicial
+	}
+	
+	method peso(cuanto){
+		peso = cuanto
 		pesoInicial = cuanto
-		pesoActual = cuanto
 	}
 	
 	method precio() { 
 		return 0.50 * pesoInicial
 	}
 	method peso() { 
-		return pesoActual
+		return peso
 	}
 	method mordisco() { 
-		pesoActual = pesoActual - 2
+		peso = peso - 2
 	}
 	method gusto() { 
 		return "chocolate"
@@ -134,6 +138,10 @@ object chocolatin {
 object golosinaBaniada {
 	var golosinaInterior
 	var pesoBanio = 4
+	
+	method pesoBanio(){
+		return pesoBanio
+	}
 	
 	method baniaA(unaGolosina) { 
 		golosinaInterior = unaGolosina
@@ -197,4 +205,3 @@ object tuttifrutti {
 		}
 	}
 }
-
