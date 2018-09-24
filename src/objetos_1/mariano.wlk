@@ -38,8 +38,8 @@ object mariano {
 	 }
 	 
 	 method sabores(){
-	 	return golosinasCompradas.map({golosina => golosina.gusto()}).withoutDuplicates() 
-	 	//return golosinasCompradas.map({golosina => golosina.gusto()}).asSet()             DUDAA!!
+	 	return golosinasCompradas.map({golosina => golosina.gusto()}).asSet() 
+	 	//return golosinasCompradas.map({golosina => golosina.gusto()}).withoutDuplicates()             SOLO PARA LISTAS!!
 	 }
 	 
 	 method golosinaMasCara(){

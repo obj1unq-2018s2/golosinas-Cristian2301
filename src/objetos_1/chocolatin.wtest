@@ -2,6 +2,8 @@ import golosinas.*
 
 describe "test de chocolatin"{
 	
+	var chocolatin = new Chocolatin()
+	
 	test "peso"{
 		chocolatin.peso(40)
 		assert.equals(40, chocolatin.pesoInicial())

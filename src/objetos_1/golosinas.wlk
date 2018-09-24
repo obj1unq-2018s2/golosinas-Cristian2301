@@ -1,4 +1,4 @@
-object bombon {
+class Bombon {
 	var peso = 15
 	
 	method precio() { 
@@ -18,7 +18,7 @@ object bombon {
 	}
 }
 
-object alfajor {
+class Alfajor {
 	var peso = 300
 	
 	method precio() { 
@@ -38,7 +38,7 @@ object alfajor {
 	}
 }
 
-object caramelo {
+class Caramelo {
 	var peso = 5
 	
 	method precio() { 
@@ -58,7 +58,7 @@ object caramelo {
 	}
 }
 											
-object chupetin {
+class Chupetin {
 	var peso = 7
 	
 	method precio() { 
@@ -80,7 +80,7 @@ object chupetin {
 	}
 }
 
-object oblea {
+class Oblea {
 	var peso = 250
 	
 	method precio() { 
@@ -105,7 +105,7 @@ object oblea {
 	}
 }
 
-object chocolatin {
+class Chocolatin {
 	var pesoInicial 
 	var peso
 	
@@ -135,7 +135,7 @@ object chocolatin {
 	}
 }
 
-object golosinaBaniada {
+class GolosinaBaniada {
 	var golosinaInterior
 	var pesoBanio = 4
 	
@@ -167,7 +167,7 @@ object golosinaBaniada {
 	}	
 }
 
-object tuttifrutti {
+class Tuttifrutti {
 	var peso = 5
 	var libreGluten
 	var property gusto
