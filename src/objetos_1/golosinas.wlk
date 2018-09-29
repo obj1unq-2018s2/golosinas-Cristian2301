@@ -193,6 +193,9 @@ object tuttifrutti {
 		}
 	}
 	
+	// Aca debia resolverse con colecciones.
+	// La idea es que basaras el funcionamiente
+	// como si fuera el de una ronda.
 	method mordisco(){
 		if(gusto == "frutilla"){
 			self.gusto("chocolate")
