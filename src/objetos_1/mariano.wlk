@@ -1,3 +1,5 @@
+import golosinas.*
+
 object mariano {
 	var golosinasCompradas = []
 	
@@ -38,8 +40,9 @@ object mariano {
 	 }
 	 
 	 method sabores(){
-	 	return golosinasCompradas.map({golosina => golosina.gusto()}).asSet() 
-	 	//return golosinasCompradas.map({golosina => golosina.gusto()}).withoutDuplicates()             SOLO PARA LISTAS!!
+	 	return golosinasCompradas.map({golosina => golosina.gusto()}).withoutDuplicates()
+	 	//return golosinasCompradas.map({golosina => golosina.gusto()}).asSet()             DUDAA!!   withoutDuplicates() = []
+//	 																									asSet() = #{}
 	 }
 	 
 	 method golosinaMasCara(){
@@ -64,6 +67,12 @@ object mariano {
 	 
 	 method esGustoFaltante(gusto){
 	 	return golosinasCompradas.all({golosina => golosina.gusto() != gusto})
-	 }                                    
+	 }     
+	 
+	 method baniar(golosina){                                                //DUDAAA!!!
+	 	var golosinaBaniada = new GolosinaBaniada()
+	 	golosinaBaniada.baniaA(golosina)                                         
+	 	self.comprar(golosina)
+	 }                               
 }
 

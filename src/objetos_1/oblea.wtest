@@ -1,6 +1,9 @@
 import golosinas.*
 
 describe "test de oblea"{
+	
+	var oblea = new Oblea()
+	
 	test "mordisco" {
 		oblea.mordisco()
 		oblea.mordisco()

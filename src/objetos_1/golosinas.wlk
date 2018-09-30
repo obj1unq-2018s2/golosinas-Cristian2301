@@ -113,7 +113,7 @@ class Chocolatin {
 		return pesoInicial
 	}
 	
-	method peso(cuanto){
+	method pesoInicial(cuanto){
 		peso = cuanto
 		pesoInicial = cuanto
 	}

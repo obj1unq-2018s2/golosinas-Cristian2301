@@ -3,11 +3,25 @@ import mariano.*
 
 describe "tests de mariano" {
 
+	var chocolatin = new Chocolatin()
+	var chocolatito = new Chocolatin()
+	var chocolatote = new Chocolatin()
+	var caramelo = new Caramelo()
+	var bombon = new Bombon()
+	var bomboncito = new Bombon()
+	var bombonsote = new Bombon()
+	var chupetin = new Chupetin()
+	var chupetin1 = new Chupetin()
+	var chupetin2 = new Chupetin()
+	var alfajor = new Alfajor()
+	var tuttifrutti = new Tuttifrutti()
+
 	fixture {
-		chocolatin.peso(100)
+		chocolatin.pesoInicial(100)
 		mariano.comprar(chocolatin)
 		mariano.comprar(caramelo)
 		mariano.comprar(bombon)
+		
 	}
 
 	test "test comprar" {
@@ -68,4 +82,38 @@ describe "tests de mariano" {
 	test "gustos faltantes"{
 		assert.equals(["melon", "vainilla"], mariano.gustosFaltantes(["melon", "chocolate", "frutilla", "vainilla"]))
 	}
+	
+	test "comprar golosinas"{
+		mariano.comprar(bombonsote)
+		mariano.comprar(bomboncito)
+		assert.equals([chocolatin, caramelo, bombon, bombonsote, bomboncito], mariano.golosinasCompradas())
+		chocolatote.pesoInicial(50)
+		chocolatito.pesoInicial(10)
+		mariano.comprar(chocolatote)
+		mariano.comprar(chocolatito)
+		assert.equals([chocolatin, caramelo, bombon, bombonsote, bomboncito, chocolatote, chocolatito], mariano.golosinasCompradas())
+		mariano.baniar(chupetin1)
+		mariano.baniar(chupetin2)
+		assert.equals([chocolatin, caramelo, bombon, bombonsote, bomboncito, chocolatote, chocolatito, chupetin1, chupetin2], mariano.golosinasCompradas())
+		mariano.comprar(tuttifrutti)
+		assert.equals([chocolatin, caramelo, bombon, bombonsote, bomboncito, chocolatote, chocolatito, chupetin1, chupetin2, tuttifrutti], mariano.golosinasCompradas())
+	}
+	
+	test "prueba de distintos metodos"{
+		mariano.probarGolosinas()
+		assert.equals(98, chocolatin.peso())
+		assert.equals(4, caramelo.peso())
+		assert.equals(11, bombon.peso())
+		assert.equals(11, bombonsote.peso())
+		assert.equals(11, bomboncito.peso())
+		assert.equals(48, chocolatote.peso())
+		assert.equals(8, chocolatito.peso())
+		assert.equals(6.3, chupetin1.peso())
+		assert.equals(6.3, chupetin2.peso())
+		tuttifrutti.gusto("chocolate")
+		assert.equals("frutilla", tuttifrutti.gusto())
+	}
 }
+
+
+
