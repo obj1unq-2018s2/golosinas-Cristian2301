@@ -21,7 +21,6 @@ describe "tests de mariano" {
 		mariano.comprar(chocolatin)
 		mariano.comprar(caramelo)
 		mariano.comprar(bombon)
-		
 	}
 
 	test "test comprar" {
@@ -100,18 +99,11 @@ describe "tests de mariano" {
 	}
 	
 	test "prueba de distintos metodos"{
+		mariano.comprar(chocolatito)
 		mariano.probarGolosinas()
 		assert.equals(98, chocolatin.peso())
 		assert.equals(4, caramelo.peso())
 		assert.equals(11, bombon.peso())
-		assert.equals(11, bombonsote.peso())
-		assert.equals(11, bomboncito.peso())
-		assert.equals(48, chocolatote.peso())
-		assert.equals(8, chocolatito.peso())
-		assert.equals(6.3, chupetin1.peso())
-		assert.equals(6.3, chupetin2.peso())
-		tuttifrutti.gusto("chocolate")
-		assert.equals("frutilla", tuttifrutti.gusto())
 	}
 }
 
